@@ -9,7 +9,8 @@ const server = http.createServer(function (req, res){
     switch(pathname){
         case '/':
             res.writeHead(200, {'Content-Type': 'text/plain'});
-            res.end('1. main\n' +
+            res.end(
+                '1. main\n' +
                 '2. api\n' +
                 '3. dynamic\n' +
                 '4. static\n' +
@@ -63,13 +64,12 @@ const server = http.createServer(function (req, res){
             })
             break;
 
-        case url.parse(req.url, true).pathname === '/get_params':
-            const parsedUrl = url.parse(req.url, true);
-            const params = parsedUrl.query;
+        case '/get_params':
+            const params = parsedurl.query;
             const timestamp = Date.now();
             const filename = `params_${timestamp}.json`;
 
-            fs.writeFile(filename, JSON.stringify(params, null, 2), err => {
+            fs.writeFile(filename, JSON.stringify(params), err => {
                 if (err) {
                     res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
                     res.end(JSON.stringify({error: "Błąd zapisu pliku"}));
@@ -91,13 +91,11 @@ const server = http.createServer(function (req, res){
 
                     const readStream = fs.createReadStream(assetPath);
                     readStream.pipe(res);
-                    console.log("nigger");
                 }
                 else {
                     res.writeHead(404, { 'Content-Type': 'application/json; charset=utf-8' });
                     const json ={"error": "404 - Nie znaleziono strony"};
                     res.end(JSON.stringify(json, null, 2));
-                    console.log("nigger2")
                 }
             })
             break;
