@@ -10,14 +10,17 @@
     "seed": "node prisma/seed.js",
     "reset": "npx prisma migrate reset --force && npm run seed"
   },
-
   "dependencies": {
     "@prisma/client": "^5.20.0",
-    "express": "^4.19.2",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
   },
   "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1",
+    "nodemon": "^3.1.7",
     "prisma": "^5.20.0",
-    "nodemon": "^3.1.7"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
