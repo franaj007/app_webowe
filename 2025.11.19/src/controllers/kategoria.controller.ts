@@ -1,25 +1,17 @@
-// src/controllers/kategoria.controller.ts
-
 import { Request, Response } from 'express';
 import prisma from '../prisma/client';
 import { Kategoria } from '@prisma/client';
 // Możemy zaimportować typ błędu z Prismy dla lepszej kontroli, jeśli chcemy
 import { Prisma } from '@prisma/client';
 
-// --- Interfejsy dla typowania danych wejściowych ---
-
-// Interfejs dla danych w req.body
 interface KategoriaRequestBody {
     nazwa: string;
 }
 
-// Interfejs dla parametrów URL
 interface ParamsId {
     id: string;
 }
 
-// Typowanie dla żądań, gdzie oczekujemy ciała (POST/PUT/PATCH)
-// TypedRequest<Params, ResBody, ReqBody>
 type TypedRequest<T> = Request<ParamsId, any, T>;
 
 // Typ kategorii z relacją do wpisów
@@ -27,10 +19,9 @@ type KategoriaWithWpisy = Kategoria & { wpisy: any[] };
 // Typ dla licznika (Prisma's AggregateType)
 type KategoriaWithCount = Kategoria & { _count: { wpisy: number } };
 
-// =========================================================================
+
 // GET /api/kategorie
 // Pobiera listę wszystkich kategorii z licznikiem powiązanych wpisów.
-// =========================================================================
 const getAll = async (req: Request, res: Response): Promise<void> => {
     try {
         const kategorie: KategoriaWithCount[] = await prisma.kategoria.findMany({
@@ -44,10 +35,9 @@ const getAll = async (req: Request, res: Response): Promise<void> => {
     }
 };
 
-// =========================================================================
+
 // GET /api/kategorie/:id
 // Pobiera kategorię po ID wraz z listą powiązanych wpisów.
-// =========================================================================
 const getById = async (req: Request<ParamsId>, res: Response): Promise<void> => {
     const id = parseInt(req.params.id);
 
@@ -72,10 +62,8 @@ const getById = async (req: Request<ParamsId>, res: Response): Promise<void> => 
     }
 };
 
-// =========================================================================
 // POST /api/kategorie
 // Tworzy nową kategorię.
-// =========================================================================
 const create = async (req: TypedRequest<KategoriaRequestBody>, res: Response): Promise<void> => {
     const { nazwa } = req.body;
     try {
@@ -96,10 +84,8 @@ const create = async (req: TypedRequest<KategoriaRequestBody>, res: Response): P
     }
 };
 
-// =========================================================================
 // PUT /api/kategorie/:id
 // Aktualizuje istniejącą kategorię.
-// =========================================================================
 const update = async (req: TypedRequest<KategoriaRequestBody>, res: Response): Promise<void> => {
     const id = parseInt(req.params.id);
     const { nazwa } = req.body;
@@ -127,10 +113,8 @@ const update = async (req: TypedRequest<KategoriaRequestBody>, res: Response): P
     }
 };
 
-// =========================================================================
 // DELETE /api/kategorie/:id
 // Usuwa kategorię.
-// =========================================================================
 const remove = async (req: Request<ParamsId>, res: Response): Promise<void> => {
     const id = parseInt(req.params.id);
 
@@ -159,5 +143,4 @@ const remove = async (req: Request<ParamsId>, res: Response): Promise<void> => {
     }
 };
 
-// Eksport nazwany
 export { getAll, getById, create, update, remove };

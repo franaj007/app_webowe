@@ -1,18 +1,13 @@
-// src/controllers/komentarz.controller.ts
-
 import { Request, Response } from 'express';
 import prisma from '../prisma/client';
 import { Komentarz } from '@prisma/client';
 
-// --- Interfejsy dla typowania danych wejściowych ---
 
-// Interfejs dla danych w req.body
 interface KomentarzRequestBody {
     tresc: string;
     wpisId?: number; // Wymagane dla POST, opcjonalne dla PUT
 }
 
-// Interfejs dla zapytań (req.query)
 interface KomentarzQuery {
     page?: string;
     limit?: string;
@@ -33,9 +28,7 @@ type KomentarzWithWpis = Komentarz & {
     } | null;
 };
 
-// =========================================================================
 // GET wszystkie komentarze (z paginacją i opcjonalnym filtrem po wpisie)
-// =========================================================================
 const getAll = async (req: TypedRequest<{}, KomentarzQuery, {}>, res: Response): Promise<void> => {
     const page = Number(req.query.page) || 1;
     const limit = Number(req.query.limit) || 10;
@@ -86,9 +79,8 @@ const getAll = async (req: TypedRequest<{}, KomentarzQuery, {}>, res: Response):
     }
 };
 
-// =========================================================================
+
 // GET jeden komentarz
-// =========================================================================
 const getById = async (req: Request, res: Response): Promise<void> => {
     const id = parseInt(req.params.id);
 
@@ -117,9 +109,7 @@ const getById = async (req: Request, res: Response): Promise<void> => {
     }
 };
 
-// =========================================================================
 // POST – nowy komentarz
-// =========================================================================
 const create = async (req: TypedRequestBody<KomentarzRequestBody>, res: Response): Promise<void> => {
     const { tresc, wpisId } = req.body;
 
@@ -152,9 +142,8 @@ const create = async (req: TypedRequestBody<KomentarzRequestBody>, res: Response
     }
 };
 
-// =========================================================================
+
 // PUT – edycja komentarza
-// =========================================================================
 const update = async (req: TypedRequestBody<KomentarzRequestBody>, res: Response): Promise<void> => {
     const { tresc } = req.body;
     const id = parseInt(req.params.id);
@@ -188,9 +177,7 @@ const update = async (req: TypedRequestBody<KomentarzRequestBody>, res: Response
     }
 };
 
-// =========================================================================
 // DELETE – usunięcie komentarza
-// =========================================================================
 const remove = async (req: Request, res: Response): Promise<void> => {
     const id = parseInt(req.params.id);
 
@@ -216,7 +203,6 @@ const remove = async (req: Request, res: Response): Promise<void> => {
     }
 };
 
-// Eksport nazwany (wymagany przez komentarze.routes.ts)
 export {
     getAll,
     getById,

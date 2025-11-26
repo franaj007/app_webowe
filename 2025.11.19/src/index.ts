@@ -25,8 +25,6 @@ app.get('/', (req: Request, res: Response): void => {
     res.json({ message: 'Blog REST API działa!' });
 });
 
-// --- Obsługa Błędów ---
-
 // Middleware do obsługi błędów 404 (musi być na końcu definicji tras)
 app.use((req: Request, res: Response): void => {
     res.status(404).json({ error: 'Nie znaleziono zasobu' });

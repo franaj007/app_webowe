@@ -1,42 +1,34 @@
-// src/controllers/wpis.controller.ts
-
 import { Request, Response } from 'express';
 import prisma from '../prisma/client';
 import { Wpis } from '@prisma/client';
 
-// --- Interfejsy dla typowania danych wejściowych ---
-
-// Interfejs dla danych w req.body podczas tworzenia/aktualizacji
 interface WpisRequestBody {
     tytul: string;
     tresc: string;
-    kategoriaId: number; // Musi być Number, aby pasowało do Prismy
+    kategoriaId: number;
 }
 
-// Interfejs dla zapytań (req.query) - używane w getAll
 interface WpisQuery {
-    kategoriaId?: string; // query param jest zawsze stringiem
+    kategoriaId?: string;
 }
 
 // Typowanie dla żądań z typowanym ciałem
 type TypedRequestBody<T> = Request<any, any, T>;
+
 // Typowanie dla żądań z typowanymi parametrami URL i Query
 type TypedRequest<P, Q, B> = Request<P, any, B, Q>;
 
-// Interfejs dla parametrów ID
 interface ParamsId {
     id: string;
 }
 
-// Typ wpisu z relacjami do kategorii i komentarzy (dla GET)
 type WpisWithRelations = Wpis & {
     kategoria: any | null; // Zastąp typem Kategoria, jeśli zaimportowany
     komentarze: any[];     // Zastąp typem Komentarz, jeśli zaimportowany
 };
 
-// =========================================================================
+
 // GET wszystkie wpisy (z opcjonalnym filtrem po kategorii)
-// =========================================================================
 const getAll = async (req: TypedRequest<{}, WpisQuery, {}>, res: Response): Promise<void> => {
     const kategoriaIdStr = req.query.kategoriaId;
     const kategoriaId = kategoriaIdStr ? parseInt(kategoriaIdStr) : undefined;
@@ -66,9 +58,8 @@ const getAll = async (req: TypedRequest<{}, WpisQuery, {}>, res: Response): Prom
     }
 };
 
-// =========================================================================
+
 // GET jeden wpis po ID
-// =========================================================================
 const getById = async (req: TypedRequest<ParamsId, {}, {}>, res: Response): Promise<void> => {
     const id = parseInt(req.params.id);
 
@@ -98,9 +89,8 @@ const getById = async (req: TypedRequest<ParamsId, {}, {}>, res: Response): Prom
     }
 };
 
-// =========================================================================
+
 // POST – tworzenie nowego wpisu
-// =========================================================================
 const create = async (req: TypedRequestBody<WpisRequestBody>, res: Response): Promise<void> => {
     const { tytul, tresc, kategoriaId } = req.body;
 
@@ -127,9 +117,8 @@ const create = async (req: TypedRequestBody<WpisRequestBody>, res: Response): Pr
     }
 };
 
-// =========================================================================
+
 // PUT – aktualizacja wpisu
-// =========================================================================
 const update = async (req: TypedRequest<ParamsId, {}, Partial<WpisRequestBody>>, res: Response): Promise<void> => {
     const id = parseInt(req.params.id);
     const { tytul, tresc, kategoriaId } = req.body;
@@ -171,9 +160,8 @@ const update = async (req: TypedRequest<ParamsId, {}, Partial<WpisRequestBody>>,
     }
 };
 
-// =========================================================================
+
 // DELETE – usunięcie wpisu
-// =========================================================================
 const remove = async (req: TypedRequest<ParamsId, {}, {}>, res: Response): Promise<void> => {
     const id = parseInt(req.params.id);
 
@@ -201,5 +189,4 @@ const remove = async (req: TypedRequest<ParamsId, {}, {}>, res: Response): Promi
     }
 };
 
-// Eksport nazwany (wymagany przez wpisy.routes.ts)
 export { getAll, getById, create, update, remove };
