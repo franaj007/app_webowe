@@ -1,0 +1,6 @@
+body { font-family: sans-serif; padding: 20px; }
+.form-row { margin-bottom: 15px; }
+label { display: block; margin-bottom: 5px; }
+input { padding: 8px; width: 300px; }
+button { padding: 10px 20px; cursor: pointer; }
+footer { margin-top: 50px; border-top: 1px solid #ccc; padding-top: 10px; }
