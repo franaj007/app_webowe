@@ -1,0 +1,19 @@
+.HomeStyle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  h1{
+    font-size: 6rem;
+  }
+  h2{
+    font-size: 3rem;
+  }
+  ul{
+    li{
+      font-size: 2rem;
+    }
+  }
+}

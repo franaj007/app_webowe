@@ -1,0 +1,42 @@
+$primary-color: #1a1a1a;
+$accent-color: #2563eb; // Royal Blue
+$text-muted: #6b7280;
+$bg-color: #ffffff;
+$secondary-bg: #f3f4f6;
+$border-color: #e5e7eb;
+$font-main: 'Inter', system-ui, -apple-system, sans-serif;
+.post-content {
+  margin-top: 2rem;
+
+  .back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: $text-muted;
+    &:hover { color: $primary-color; }
+  }
+
+  header {
+    margin-bottom: 2rem;
+
+    .category {
+      display: inline-block;
+      background: $secondary-bg;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    h1 { font-size: 2.5rem; margin: 0 0 1rem; line-height: 1.2; }
+
+    .meta { color: $text-muted; font-size: 0.9rem; }
+  }
+
+  .body {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #333;
+  }
+}

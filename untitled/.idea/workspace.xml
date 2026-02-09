@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0a7de63b-4c21-4b38-bb1f-cc3d8d145d8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../2026.01.12/src/components/Navbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.01.12/src/components/PostCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.01.12/src/data.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.01.12/src/pages/Categories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.01.12/src/pages/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.01.12/src/pages/Post.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.01.12/src/styles/Categories.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.01.12/src/styles/Home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.01.12/src/styles/Navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.01.12/src/styles/Post.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.01.12/src/styles/global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.01.12/src/types/blog.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/eslint.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/public/vite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/assets/react.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/components/Footer/Footer.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/components/Footer/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/components/Footer/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/components/Footer/x.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/components/Navbar/Navbar.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/components/Navbar/Navbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/components/Navbar/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/data/posts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/scenes/Categories/Categories.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/scenes/Categories/Categories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/scenes/Categories/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/scenes/Contact/Contact.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/scenes/Contact/Contact.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/scenes/Contact/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/scenes/Home/Home.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/scenes/Home/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/scenes/Home/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/scenes/Posts/Posts.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/scenes/Posts/Posts.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/scenes/Posts/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/src/types/Post/Post.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/tsconfig.node.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2026.02.02/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/.idea/2025.12.10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/src/About.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/src/Blog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/src/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2025.12.10/src/setupTests.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="39R6I36hHDudvtdhXS11LZ2ouu3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/home/franaj/app_webowe/2026.01.12/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-WS-252.26199.162" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a7de63b-4c21-4b38-bb1f-cc3d8d145d8e" name="Changes" comment="" />
+      <created>1770646452313</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770646452313</updated>
+      <workItem from="1770646453329" duration="1322000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,29 @@
+.Navbar {
+  background-color: cadetblue;
+  width: 100%;
+
+  &Holder {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 6rem;
+    margin-block: 1.5rem;
+
+    &Link {
+      color: #fff;
+      font-size: 2rem;
+      padding: 1.5rem 2rem;
+      text-decoration: none;
+      border-radius: .5rem;
+      transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: darken(cadetblue, 40);
+      }
+    }
+  }
+}
