@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.post-item {
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+  a {
+    color: inherit;
+    text-decoration: none;
+    &:hover h2 { text-decoration: underline; }
+  }
+  h2 { margin: 0 0 10px; font-size: 1.4rem; text-transform: capitalize; }
+  p { color: #555; margin: 0; }
+}
+
+.details {
+  .meta { padding: 20px; background: #f9f9f9; border: 1px solid #000; margin: 20px 0; }
+  .comments { margin-top: 50px; }
+  .comment-node { padding: 15px 0; border-top: 1px solid #eee; font-size: 0.9rem; }
+}
+
+.back-btn { display: block; margin-bottom: 30px; color: #000; font-weight: bold; }
