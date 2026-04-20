@@ -1,0 +1,4 @@
+Kursy:
+- Filozofia,
+- Matematyka,
+- Filozofia
